@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/ps.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <title>NFT preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    body {
+        font-family: Outfit;
+    }
+</style>
+
+<body class="bg-[#0d192b] flex flex-col items-center p-10 drop-shadow-2xl">
+    <div class="w-[19rem] bg-[#14253d] flex flex-col p-6 items-center rounded-lg gap-4 font-outfit">
+        <div class="w-[16rem]">
+            <img class="rounded-lg w-full h-full" src="images/image-equilibrium.jpg" alt="Equilibrium ">
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="font-bold text-white ">Equilibrium #3429</div>
+            <div class="text-[#8bacda]"> Our Equilibrium collection promotes balance and calm.</div>
+        </div>
+        <div class="w-full flex justify-between">
+            <div class="flex gap-2 items-center">
+                <div><img src="images/icon-ethereum.svg" alt="ethereum"></div>
+                <div class="text-[#00fff7]">0.041 ETH</div>
+            </div>
+            <div>
+                <div class="flex gap-2 items-center">
+                    <div><img src="images/icon-clock.svg" alt=""></div>
+                    <div class="text-[#8bacda]">3 days left</div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="border-[1px] outline-none border-gray-400 flex-grow  w-full"> -->
+        <div class="bg-[#2f415b] h-[.5px] rounded-full  w-full"></div>
+        <div class="flex w-full gap-4">
+            <div class="rounded-full overflow-hidden w-[2rem] ring ring-green-900"><img src="images/ps.jpg" alt="ps"></div>
+            <div class="">
+                <span class="text-[#8bacda]">Creation of</span>
+                <span class="text-white">Prakhar Seth</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
