@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/ps.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/ps.jpg" class="">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 
     <title>NFT preview card component</title>
@@ -17,12 +17,21 @@
 </style>
 
 <body class="bg-[#0d192b] flex flex-col items-center p-10 drop-shadow-2xl">
-    <div class="w-[19rem] bg-[#14253d] flex flex-col p-6 items-center rounded-lg gap-4 font-outfit">
-        <div class="w-[16rem]">
-            <img class="rounded-lg w-full h-full" src="images/image-equilibrium.jpg" alt="Equilibrium ">
+    <div class="w-[19rem] bg-[#14253d] flex flex-col p-6 items-center rounded-lg gap-4 font-outfit  hover-trigger ">
+        <div class="w-[16rem] h-[16rem] flex justify-center items-center group cursor-pointer     ">
+            <img class="  relative rounded-lg w-full h-full " src="images/image-equilibrium.jpg" alt="Equilibrium -z-10">
+            <div class="opacity-0  absolute bg-[#00fff7] h-[16rem] w-[16rem] rounded-lg group-hover:opacity-50  
+            transition ease-in-out delay-[.2s]
+            "></div>
+            <div class="
+             absolute  opacity-0  group-hover:opacity-100 ease-in-out delay-[.2s]   ">
+                <img class="hover" src="images/icon-view.svg" alt="eye">
+            </div>
         </div>
+
+
         <div class="flex flex-col gap-2">
-            <div class="font-bold text-white ">Equilibrium #3429</div>
+            <div class="font-bold text-white hover:text-[#00fff7] cursor-pointer">Equilibrium #3429</div>
             <div class="text-[#8bacda]"> Our Equilibrium collection promotes balance and calm.</div>
         </div>
         <div class="w-full flex justify-between">
@@ -43,7 +52,7 @@
             <div class="rounded-full overflow-hidden w-[2rem] ring ring-green-900"><img src="images/ps.jpg" alt="ps"></div>
             <div class="">
                 <span class="text-[#8bacda]">Creation of</span>
-                <span class="text-white">Prakhar Seth</span>
+                <span class="text-white hover:text-[#00fff7] cursor-pointer">Prakhar Seth</span>
             </div>
         </div>
     </div>
